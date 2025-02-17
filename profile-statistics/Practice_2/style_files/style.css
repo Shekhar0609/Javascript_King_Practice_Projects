@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    height: 100vh;
+    background-color: yellow;
+}
+
+.stats-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container {
+    border: dotted green;
+    margin: 20px;
+    height: 150px;
+    width: 200px;
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.counter {
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: green;
+}
+
+.box-container h3 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+@media only screen and (max-width:700px) {
+    .stats-container{
+        flex-direction: column;
+    }
+}
