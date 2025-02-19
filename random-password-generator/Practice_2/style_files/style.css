@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-generator-container {
+  height: 200px;
+  width: 500px;
+  background-color: #ffc7c9;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+.password-generator-container h2 {
+  font-family: "Courier New";
+  margin-bottom: 20px;
+}
+
+.generate-password {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.input-password {
+  border: 1.5px solid #0f0f28fb;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+
+.input-password[placeholder] {
+  font-size: 20px;
+  padding: 0 50px 0px 10px;
+  font-family: "Courier New";
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.fa-copy {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.generate-btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.generate-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.alert-container {
+  display: none;
+}
+
+.copied-alert {
+  display: block;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: #609e64;
+  color: #000000;
+  font-size: 22px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+
