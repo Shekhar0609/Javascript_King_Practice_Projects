@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 100px;
+  color: white;
+  backdrop-filter: brightness(0.5);
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+  font-size: 25px;
+  border: white solid 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.5s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  top: 0;
+      transition: width .2s;
+}
+
+.split.left {
+  background-color: red;
+  position: absolute;
+  left: 0;
+  background-image: url(https://m.media-amazon.com/images/I/71xb2xkN5qL._SX679_.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right {
+  background-color: blue;
+  position: absolute;
+  right: 0;
+  background-image: url(https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.active-left .left{
+    width: 70%;
+}
+
+.active-left .right{
+    width: 30%;
+} 
+
+.active-right .left {
+    width: 30%;
+}
+
+.active-right .right {
+    width: 70%;
+} 
