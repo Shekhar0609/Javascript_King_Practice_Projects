@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+span {
+  height: 50px;
+  width: 50px;
+  background-image: URL(https://cdn3.iconfinder.com/data/icons/object-emoji/50/Heart-512.png);
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  animation: heartAnimation .5s linear;
+}
+
+
+@keyframes heartAnimation {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-100%,-500%);
+        opacity: 0;
+        filter: hue-rotate(500deg);
+    }
+}
