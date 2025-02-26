@@ -22,9 +22,11 @@ function textUpdate() {
     characterIndex = 0;
   }
 
+
+
   if (careerIndex === careers.length) {
     careerIndex = 0;
   }
 
-  setTimeout(textUpdate, 500);
+  setTimeout(textUpdate,500);
 }
